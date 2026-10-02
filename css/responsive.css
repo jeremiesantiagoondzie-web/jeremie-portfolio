@@ -87,3 +87,66 @@
         align-items: flex-start;
     }
 }
+@media (max-width: 850px) {
+
+    .about-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-text h2,
+    .contact-info h2 {
+        font-size: 32px;
+    }
+
+    .project-large {
+        padding: 28px;
+    }
+
+    .project-large-number {
+        font-size: 55px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .inner-hero {
+        padding-top: 85px;
+        padding-bottom: 60px;
+    }
+
+    .inner-hero h1 {
+        letter-spacing: -1.5px;
+    }
+
+    .timeline-item {
+        grid-template-columns: 38px 1fr;
+        gap: 15px;
+    }
+
+    .timeline-marker {
+        width: 38px;
+        height: 38px;
+    }
+
+    .timeline::before {
+        left: 18px;
+    }
+
+    .timeline-content {
+        padding: 22px;
+    }
+
+    .contact-form-wrapper {
+        padding: 22px;
+    }
+
+    .project-large-content h2 {
+        font-size: 24px;
+    }
+}
