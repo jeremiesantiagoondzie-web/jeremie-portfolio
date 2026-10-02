@@ -1,0 +1,500 @@
+/* ==================================================
+   RESET
+================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: #08111f;
+    color: #f4f7fb;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: min(1180px, 90%);
+    margin: auto;
+}
+
+.section {
+    padding: 100px 0;
+}
+
+
+/* ==================================================
+   HEADER
+================================================== */
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(8, 17, 31, 0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.navbar {
+    height: 78px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: -2px;
+}
+
+.logo span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    margin-right: 3px;
+    border-radius: 10px;
+    background: #38bdf8;
+    color: #08111f;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.nav-links a {
+    color: #a9b7ca;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #38bdf8;
+}
+
+.nav-button {
+    padding: 11px 18px;
+    border: 1px solid #38bdf8;
+    border-radius: 8px;
+    color: #38bdf8;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.nav-button:hover {
+    background: #38bdf8;
+    color: #08111f;
+}
+
+.menu-toggle {
+    display: none;
+    border: 0;
+    background: none;
+    color: white;
+    font-size: 27px;
+    cursor: pointer;
+}
+
+
+/* ==================================================
+   HERO
+================================================== */
+
+.hero {
+    min-height: calc(100vh - 78px);
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: #0ea5e9;
+    filter: blur(150px);
+    opacity: 0.12;
+    top: -150px;
+    right: -100px;
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    gap: 80px;
+}
+
+.hero-label,
+.section-label {
+    color: #38bdf8;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 6vw, 74px);
+    line-height: 1.05;
+    letter-spacing: -3px;
+}
+
+.hero h1 span {
+    display: block;
+    color: #38bdf8;
+}
+
+.hero h2 {
+    margin-top: 20px;
+    font-size: 23px;
+    color: #d6dfeb;
+    font-weight: 600;
+}
+
+.hero-description {
+    max-width: 620px;
+    margin-top: 24px;
+    color: #94a3b8;
+    font-size: 17px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 14px;
+    margin-top: 34px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50px;
+    padding: 0 23px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.btn-primary {
+    background: #38bdf8;
+    color: #08111f;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+}
+
+.btn-secondary {
+    border: 1px solid #334155;
+    color: #f8fafc;
+}
+
+.btn-secondary:hover {
+    border-color: #38bdf8;
+    color: #38bdf8;
+}
+
+.social-links {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-top: 25px;
+    color: #7f8da3;
+    font-size: 14px;
+}
+
+.social-links a:hover {
+    color: #38bdf8;
+}
+
+
+/* ==================================================
+   PROFILE CARD
+================================================== */
+
+.hero-visual {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-card {
+    width: min(390px, 100%);
+    padding: 42px 32px;
+    text-align: center;
+    background: linear-gradient(
+        145deg,
+        rgba(15, 31, 51, 0.95),
+        rgba(10, 21, 37, 0.95)
+    );
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    border-radius: 22px;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.3);
+}
+
+.profile-circle {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid #38bdf8;
+    color: #38bdf8;
+    font-size: 42px;
+    font-weight: 800;
+}
+
+.profile-card h3 {
+    font-size: 24px;
+}
+
+.profile-card > p {
+    color: #94a3b8;
+    margin-top: 7px;
+}
+
+.profile-line {
+    width: 60px;
+    height: 2px;
+    margin: 25px auto;
+    background: #38bdf8;
+}
+
+.profile-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.profile-info div {
+    padding: 13px 5px;
+    background: rgba(255, 255, 255, 0.035);
+    border-radius: 8px;
+}
+
+.profile-info strong,
+.profile-info span {
+    display: block;
+}
+
+.profile-info strong {
+    font-size: 14px;
+    color: #38bdf8;
+}
+
+.profile-info span {
+    color: #8796aa;
+    font-size: 11px;
+    margin-top: 3px;
+}
+
+
+/* ==================================================
+   TITRES
+================================================== */
+
+.section-heading {
+    max-width: 700px;
+    margin-bottom: 50px;
+}
+
+.section-heading h2 {
+    font-size: clamp(32px, 4vw, 48px);
+    line-height: 1.1;
+}
+
+.section-heading > p:last-child {
+    color: #8fa0b5;
+    margin-top: 15px;
+}
+
+
+/* ==================================================
+   CARTES
+================================================== */
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.info-card {
+    padding: 32px;
+    border-radius: 15px;
+    background: #0d1a2b;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(56, 189, 248, 0.35);
+}
+
+.card-icon {
+    color: #38bdf8;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.info-card h3 {
+    margin-top: 22px;
+    font-size: 21px;
+}
+
+.info-card p {
+    color: #8797aa;
+    margin-top: 12px;
+}
+
+
+/* ==================================================
+   PROJETS
+================================================== */
+
+.section-heading-row {
+    max-width: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 20px;
+}
+
+.see-more {
+    color: #38bdf8;
+    font-weight: 600;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.project-card {
+    min-height: 350px;
+    padding: 28px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    background: #0d1a2b;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.project-number {
+    position: absolute;
+    top: 22px;
+    right: 23px;
+    color: rgba(56, 189, 248, 0.25);
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.project-content {
+    padding-top: 75px;
+}
+
+.project-content > span {
+    color: #38bdf8;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.project-content h3 {
+    margin-top: 15px;
+    font-size: 23px;
+}
+
+.project-content p {
+    margin-top: 15px;
+    color: #8fa0b5;
+}
+
+.project-content a {
+    display: inline-block;
+    margin-top: 24px;
+    color: #f8fafc;
+    font-weight: 600;
+}
+
+.project-content a:hover {
+    color: #38bdf8;
+}
+
+
+/* ==================================================
+   CTA
+================================================== */
+
+.cta-box {
+    padding: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    border-radius: 18px;
+    background: #0d1a2b;
+    border: 1px solid rgba(56, 189, 248, 0.18);
+}
+
+.cta-box h2 {
+    max-width: 650px;
+    font-size: 36px;
+}
+
+.cta-box p:last-child {
+    margin-top: 10px;
+    color: #8fa0b5;
+}
+
+
+/* ==================================================
+   FOOTER
+================================================== */
+
+.footer {
+    padding: 45px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.footer p {
+    color: #6f7f93;
+    font-size: 13px;
+}
