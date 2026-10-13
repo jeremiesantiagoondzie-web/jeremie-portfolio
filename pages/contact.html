@@ -1,9 +1,9 @@
+
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta
@@ -25,7 +25,6 @@
 
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/responsive.css">
-
 </head>
 
 <body>
@@ -52,41 +51,12 @@
 
             <ul class="nav-links" id="navLinks">
 
-                <li>
-                    <a href="../index.html">
-                        Accueil
-                    </a>
-                </li>
-
-                <li>
-                    <a href="about.html">
-                        À propos
-                    </a>
-                </li>
-
-                <li>
-                    <a href="projects.html">
-                        Projets
-                    </a>
-                </li>
-
-                <li>
-                    <a href="skills.html">
-                        Compétences
-                    </a>
-                </li>
-
-                <li>
-                    <a href="experience.html">
-                        Expérience
-                    </a>
-                </li>
-
-                <li>
-                    <a href="contact.html" class="active">
-                        Contact
-                    </a>
-                </li>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="projects.html">Projets</a></li>
+                <li><a href="skills.html">Compétences</a></li>
+                <li><a href="experience.html">Expérience</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
 
             </ul>
 
@@ -99,21 +69,19 @@
     </header>
 
 
-    <!-- ================= CONTENU ================= -->
+    <!-- ================= CONTENU PRINCIPAL ================= -->
 
     <main>
+
+        <!-- INTRODUCTION -->
 
         <section class="inner-hero section">
 
             <div class="container">
 
-                <p class="section-label">
-                    CONTACT
-                </p>
+                <p class="section-label">CONTACT</p>
 
-                <h1>
-                    Parlons de votre projet
-                </h1>
+                <h1>Parlons de votre projet</h1>
 
                 <p>
                     Une question, une idée, une collaboration ou une
@@ -125,11 +93,13 @@
         </section>
 
 
+        <!-- INFORMATIONS ET FORMULAIRE -->
+
         <section class="section">
 
             <div class="container contact-grid">
 
-                <!-- INFORMATIONS -->
+                <!-- INFORMATIONS DE CONTACT -->
 
                 <div class="contact-info">
 
@@ -148,11 +118,11 @@
                     </p>
 
 
+                    <!-- GITHUB -->
+
                     <div class="contact-item">
 
-                        <span>
-                            GITHUB
-                        </span>
+                        <span>GITHUB</span>
 
                         <a
                             href="https://github.com/jeremiesantiagoondzie-web"
@@ -165,11 +135,11 @@
                     </div>
 
 
+                    <!-- LINKEDIN -->
+
                     <div class="contact-item">
 
-                        <span>
-                            LINKEDIN
-                        </span>
+                        <span>LINKEDIN</span>
 
                         <a href="#">
                             Profil LinkedIn à ajouter
@@ -178,14 +148,14 @@
                     </div>
 
 
+                    <!-- CV -->
+
                     <div class="contact-item">
 
-                        <span>
-                            CV
-                        </span>
+                        <span>CV</span>
 
-                        <a href="../documents/CV-Jeremie-Santiago.pdf">
-                            Télécharger mon CV
+                        <a href="../documents/CV-Jeremie-Santiago.pdf" target="_blank">
+                            Consulter mon CV
                         </a>
 
                     </div>
@@ -193,97 +163,46 @@
                 </div>
 
 
-                <!-- FORMULAIRE -->
+                <!-- FORMULAIRE GOOGLE : UN SEUL FORMULAIRE -->
 
                 <div class="contact-form-wrapper">
 
-                    <form
-                        class="contact-form"
-                        id="contactForm"
-                    >
+                    <div class="contact-heading">
 
-                        <div class="form-group">
+                        <p class="section-label">
+                            ME CONTACTER
+                        </p>
 
-                            <label for="name">
-                                Nom
-                            </label>
+                        <h2>
+                            Envoyez-moi un message
+                        </h2>
 
-                            <input
-                                type="text"
-                                id="name"
-                                name="name"
-                                placeholder="Votre nom"
-                                required
-                            >
+                        <p>
+                            Vous souhaitez discuter d'un stage, d'un emploi,
+                            d'un projet en Data Science ou d'une collaboration ?
+                            Remplissez le formulaire ci-dessous.
+                        </p>
 
-                        </div>
+                    </div>
 
+                    <div class="google-form-container">
 
-                        <div class="form-group">
-
-                            <label for="email">
-                                E-mail
-                            </label>
-
-                            <input
-                                type="email"
-                                id="email"
-                                name="email"
-                                placeholder="jeremiesantiagoofficiel@email.com"
-                                required
-                            >
-
-                        </div>
-
-
-                        <div class="form-group">
-
-                            <label for="subject">
-                                Sujet
-                            </label>
-
-                            <input
-                                type="text"
-                                id="subject"
-                                name="subject"
-                                placeholder="Objet de votre message"
-                                required
-                            >
-
-                        </div>
-
-
-                        <div class="form-group">
-
-                            <label for="message">
-                                Message
-                            </label>
-
-                            <textarea
-                                id="message"
-                                name="message"
-                                rows="7"
-                                placeholder="Écrivez votre message..."
-                                required
-                            ></textarea>
-
-                        </div>
-
-
-                        <button
-                            type="submit"
-                            class="btn btn-primary"
+                        <iframe
+                            src="https://docs.google.com/forms/d/e/1FAIpQLSdZ25HwGHcjJuDpKo22N68aPca-AAEcGyihALseklbaeZj_DA/viewform?embedded=true"
+                            title="Formulaire de contact de Jérémie Santiago"
+                            width="100%"
+                            height="1900"
+                            loading="lazy"
                         >
-                            Envoyer le message →
-                        </button>
+                            Votre navigateur ne prend pas en charge
+                            les formulaires intégrés.
+                        </iframe>
 
+                    </div>
 
-                        <p
-                            id="formMessage"
-                            class="form-message"
-                        ></p>
-
-                    </form>
+                    <p class="contact-note">
+                        Les réponses sont recueillies via Google Forms.
+                    </p>
 
                 </div>
 
@@ -321,7 +240,10 @@
     </footer>
 
 
+    <!-- SCRIPT DU MENU -->
+
     <script src="../js/script.js"></script>
 
 </body>
+
 </html>

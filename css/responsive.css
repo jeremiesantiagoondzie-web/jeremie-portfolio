@@ -150,3 +150,63 @@
         font-size: 24px;
     }
 }
+
+/* ==================================================
+   FORMULAIRE GOOGLE RESPONSIVE
+================================================== */
+
+/* Tablettes et écrans intermédiaires */
+@media (max-width: 850px) {
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .contact-form-wrapper {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .google-form-container {
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .google-form-container iframe {
+        display: block;
+        width: 100%;
+        height: 2000px;
+        border: 0;
+    }
+}
+
+/* Téléphones */
+@media (max-width: 600px) {
+
+    .contact-form-wrapper {
+        padding: 16px;
+    }
+
+    .contact-heading h2 {
+        font-size: 25px;
+    }
+
+    .google-form-container iframe {
+        width: 100%;
+        height: 2200px;
+    }
+}
+
+/* Très petits téléphones */
+@media (max-width: 380px) {
+
+    .contact-form-wrapper {
+        padding: 12px;
+    }
+
+    .google-form-container iframe {
+        height: 2300px;
+    }
+}

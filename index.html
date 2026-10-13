@@ -1,62 +1,65 @@
-
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-    <!-- Encodage des caractères -->
+
+    <!-- Encodage -->
     <meta charset="UTF-8">
 
-    <!-- Adaptation aux téléphones, tablettes et ordinateurs -->
+    <!-- Responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Description du site -->
-    <meta
-        name="description"
-        content="Portfolio professionnel de Jérémie Santiago, étudiant en Data Science passionné par l'analyse des données, la Business Intelligence et les technologies numériques."
-    >
+    <!-- Référencement -->
+    <meta name="description"
+        content="Portfolio professionnel de Jérémie Santiago ONDZIE MOUABA, étudiant en Data Science passionné par l'analyse de données, la Business Intelligence et les technologies numériques.">
 
-    <!-- Mots-clés -->
-    <meta
-        name="keywords"
-        content="Jérémie Santiago, Data Science, Data Analyst, Business Intelligence, Power BI, Python, R, Portfolio"
-    >
+    <meta name="keywords"
+        content="Jérémie Santiago, Data Science, Data Analyst, Business Intelligence, Python, R, Power BI, Excel, GitHub">
 
-    <!-- Auteur -->
     <meta name="author" content="Jérémie Santiago">
 
-    <!-- Titre affiché dans l'onglet du navigateur -->
+    <!-- Titre -->
     <title>Jérémie Santiago | Data Science & Technologies</title>
 
-    <!-- Préconnexion aux polices Google -->
+
+    <!-- ================= GOOGLE FONTS ================= -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- Police utilisée -->
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet"
-    >
+        rel="stylesheet">
 
-    <!-- Feuilles de style -->
+
+    <!-- ================= CSS ================= -->
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+
 </head>
+
 
 <body>
 
+
     <!-- =====================================================
-         HEADER / NAVIGATION
+         NAVBAR
     ====================================================== -->
 
     <header class="header">
 
         <nav class="navbar container">
 
-            <!-- Logo -->
-            <a href="index.html" class="logo" aria-label="Jérémie Santiago - Accueil">
+            <!-- LOGO -->
+
+            <a href="./index.html" class="logo" aria-label="Accueil - Jérémie Santiago">
                 <span>J</span>S
             </a>
 
-            <!-- Menu mobile -->
+
+            <!-- MENU MOBILE -->
+
             <button
                 class="menu-toggle"
                 id="menuToggle"
@@ -67,49 +70,60 @@
                 ☰
             </button>
 
-            <!-- Liens de navigation -->
+
+            <!-- LIENS NAVIGATION -->
+
             <ul class="nav-links" id="navLinks">
 
                 <li>
-                    <a href="index.html" class="active">
+                    <a href="./index.html" class="active">
                         Accueil
                     </a>
                 </li>
 
                 <li>
-                    <a href="pages/about.html">
+                    <a href="./pages/about.html">
                         À propos
                     </a>
                 </li>
 
                 <li>
-                    <a href="pages/projects.html">
+                    <a href="./pages/projects.html">
                         Projets
                     </a>
                 </li>
 
                 <li>
-                    <a href="pages/skills.html">
+                    <a href="./pages/skills.html">
                         Compétences
                     </a>
                 </li>
 
                 <li>
-                    <a href="pages/experience.html">
+                    <a href="./pages/experience.html">
                         Expérience
                     </a>
                 </li>
 
                 <li>
-                    <a href="pages/contact.html">
+                    <a href="./pages/contact.html">
                         Contact
                     </a>
                 </li>
 
             </ul>
 
-            <!-- Bouton contact -->
-            <a href="pages/contact.html" class="nav-button">
+
+            <!-- =================================================
+                 BOUTON ME CONTACTER
+                 LE LIEN EST DIRECTEMENT VERS contact.html
+            ================================================== -->
+
+            <a
+                href="./pages/contact.html"
+                class="nav-button"
+                aria-label="Ouvrir la page contact"
+            >
                 Me contacter
             </a>
 
@@ -118,35 +132,42 @@
     </header>
 
 
+
     <!-- =====================================================
          CONTENU PRINCIPAL
     ====================================================== -->
 
     <main>
 
+
         <!-- =================================================
-             HERO / SECTION PRINCIPALE
+             HERO
         ================================================== -->
 
         <section class="hero" id="accueil">
 
             <div class="container hero-content">
 
-                <!-- Partie gauche -->
+
+                <!-- ================= TEXTE ================= -->
+
                 <div class="hero-text">
 
                     <p class="hero-label">
                         BIENVENUE SUR MON PORTFOLIO
                     </p>
 
+
                     <h1>
                         Bonjour, je suis
                         <span>Jérémie Santiago</span>
                     </h1>
 
+
                     <h2>
                         Étudiant en Data Science & passionné par la technologie
                     </h2>
+
 
                     <p class="hero-description">
                         Je développe mes compétences dans l'analyse des données,
@@ -155,18 +176,21 @@
                         concrètes.
                     </p>
 
-                    <!-- Boutons -->
+
+                    <!-- BOUTONS -->
+
                     <div class="hero-buttons">
 
                         <a
-                            href="pages/projects.html"
+                            href="./pages/projects.html"
                             class="btn btn-primary"
                         >
                             Découvrir mes projets →
                         </a>
 
+
                         <a
-                            href="pages/contact.html"
+                            href="./pages/contact.html"
                             class="btn btn-secondary"
                         >
                             Me contacter
@@ -174,7 +198,9 @@
 
                     </div>
 
-                    <!-- Réseaux -->
+
+                    <!-- RÉSEAUX -->
+
                     <div class="social-links">
 
                         <a
@@ -188,11 +214,11 @@
                         <span>•</span>
 
                         <a
-                            href="#"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            LinkedIn
+                        href="www.linkedin.com/in/jeremie-ondzie-mouaba"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                                                                    >
+                         LinkedIn
                         </a>
 
                     </div>
@@ -200,46 +226,81 @@
                 </div>
 
 
-                <!-- =================================================
-                     PARTIE DROITE / CARTE PROFIL
-                ================================================== -->
+
+                <!-- ================= CARTE PROFIL ================= -->
 
                 <div class="hero-visual">
 
                     <div class="profile-card">
 
-                        <!-- Cercle provisoire pour la photo -->
-                        <div class="profile-circle">
-                            JS
+
+                        <!-- PHOTO -->
+                        <div class="profile-photo">
+
+                            <img
+                                src="./assets/images/profile.jpeg"
+                                alt="Photo de Jérémie Santiago"
+                            >
+
                         </div>
+
 
                         <h3>
                             Jérémie Santiago
                         </h3>
 
+
                         <p>
                             Data Science • BI • Développement
                         </p>
 
+
                         <div class="profile-line"></div>
 
-                        <!-- Domaines -->
+
+                        <!-- DOMAINES -->
+
                         <div class="profile-info">
 
-                            <div>
-                                <strong>Data</strong>
-                                <span>Analyse</span>
-                            </div>
 
                             <div>
-                                <strong>BI</strong>
-                                <span>Décisionnel</span>
+
+                                <strong>
+                                    Data
+                                </strong>
+
+                                <span>
+                                    Analyse
+                                </span>
+
                             </div>
 
+
                             <div>
-                                <strong>Web</strong>
-                                <span>Développement</span>
+
+                                <strong>
+                                    BI
+                                </strong>
+
+                                <span>
+                                    Décisionnel
+                                </span>
+
                             </div>
+
+
+                            <div>
+
+                                <strong>
+                                    Web
+                                </strong>
+
+                                <span>
+                                    Développement
+                                </span>
+
+                            </div>
+
 
                         </div>
 
@@ -252,13 +313,15 @@
         </section>
 
 
-        <!-- =====================================================
-             SECTION À PROPOS / INTRODUCTION
-        ====================================================== -->
+
+        <!-- =================================================
+             MON UNIVERS
+        ================================================== -->
 
         <section class="intro section" id="univers">
 
             <div class="container">
+
 
                 <div class="section-heading">
 
@@ -266,9 +329,11 @@
                         MON UNIVERS
                     </p>
 
+
                     <h2>
                         Des données aux solutions
                     </h2>
+
 
                     <p>
                         Je m'intéresse aux technologies qui permettent de
@@ -280,19 +345,25 @@
                 </div>
 
 
-                <!-- Cartes -->
+
+                <!-- CARTES -->
+
                 <div class="cards-grid">
 
-                    <!-- Carte 1 -->
+
+                    <!-- DATA SCIENCE -->
+
                     <article class="info-card">
 
                         <div class="card-icon">
                             01
                         </div>
 
+
                         <h3>
                             Data Science
                         </h3>
+
 
                         <p>
                             Analyse, exploration, préparation et visualisation
@@ -303,16 +374,20 @@
                     </article>
 
 
-                    <!-- Carte 2 -->
+
+                    <!-- BUSINESS INTELLIGENCE -->
+
                     <article class="info-card">
 
                         <div class="card-icon">
                             02
                         </div>
 
+
                         <h3>
                             Business Intelligence
                         </h3>
+
 
                         <p>
                             Création de tableaux de bord et exploitation des
@@ -323,16 +398,20 @@
                     </article>
 
 
-                    <!-- Carte 3 -->
+
+                    <!-- DÉVELOPPEMENT -->
+
                     <article class="info-card">
 
                         <div class="card-icon">
                             03
                         </div>
 
+
                         <h3>
                             Développement
                         </h3>
+
 
                         <p>
                             Conception de sites et interfaces web modernes,
@@ -342,6 +421,7 @@
 
                     </article>
 
+
                 </div>
 
             </div>
@@ -349,13 +429,15 @@
         </section>
 
 
-        <!-- =====================================================
-             SECTION PROJETS
-        ====================================================== -->
+
+        <!-- =================================================
+             PROJETS
+        ================================================== -->
 
         <section class="projects-preview section" id="projets">
 
             <div class="container">
+
 
                 <div class="section-heading section-heading-row">
 
@@ -371,8 +453,9 @@
 
                     </div>
 
+
                     <a
-                        href="pages/projects.html"
+                        href="./pages/projects.html"
                         class="see-more"
                     >
                         Voir tous les projets →
@@ -381,15 +464,20 @@
                 </div>
 
 
-                <!-- Grille des projets -->
+
+                <!-- GRILLE PROJETS -->
+
                 <div class="project-grid">
 
-                    <!-- Projet 1 -->
+
+                    <!-- PROJET 1 -->
+
                     <article class="project-card">
 
                         <div class="project-number">
                             01
                         </div>
+
 
                         <div class="project-content">
 
@@ -397,9 +485,11 @@
                                 DATA SCIENCE
                             </span>
 
+
                             <h3>
                                 Analyse et visualisation des données
                             </h3>
+
 
                             <p>
                                 Projet d'analyse exploratoire permettant
@@ -408,7 +498,8 @@
                                 visualisations pertinentes.
                             </p>
 
-                            <a href="pages/projects.html">
+
+                            <a href="./pages/projects.html">
                                 Découvrir →
                             </a>
 
@@ -417,12 +508,15 @@
                     </article>
 
 
-                    <!-- Projet 2 -->
+
+                    <!-- PROJET 2 -->
+
                     <article class="project-card">
 
                         <div class="project-number">
                             02
                         </div>
+
 
                         <div class="project-content">
 
@@ -430,9 +524,11 @@
                                 BUSINESS INTELLIGENCE
                             </span>
 
+
                             <h3>
                                 Tableau de bord décisionnel
                             </h3>
+
 
                             <p>
                                 Conception d'un dashboard interactif destiné
@@ -440,7 +536,8 @@
                                 compréhension des performances.
                             </p>
 
-                            <a href="pages/projects.html">
+
+                            <a href="./pages/projects.html">
                                 Découvrir →
                             </a>
 
@@ -449,36 +546,43 @@
                     </article>
 
 
-                    <!-- Projet 3 -->
+
+                    <!-- PROJET 3 -->
+
                     <article class="project-card">
 
                         <div class="project-number">
                             03
                         </div>
 
+
                         <div class="project-content">
 
                             <span>
-                                WEB
+                                PROJET GIMAC
                             </span>
 
+
                             <h3>
-                                Application web moderne
+                                Automatisation des confirmations
                             </h3>
 
+
                             <p>
-                                Création d'une interface web responsive avec
-                                HTML, CSS et JavaScript, pensée pour offrir
-                                une expérience simple et professionnelle.
+                                Projet collaboratif visant à automatiser
+                                l'envoi de demandes de confirmation pour
+                                certaines transactions en attente.
                             </p>
 
-                            <a href="pages/projects.html">
+
+                            <a href="./pages/projects.html">
                                 Découvrir →
                             </a>
 
                         </div>
 
                     </article>
+
 
                 </div>
 
@@ -487,13 +591,15 @@
         </section>
 
 
-        <!-- =====================================================
-             SECTION APPEL À L'ACTION
-        ====================================================== -->
+
+        <!-- =================================================
+             CALL TO ACTION
+        ================================================== -->
 
         <section class="cta section">
 
             <div class="container cta-box">
+
 
                 <div>
 
@@ -501,9 +607,11 @@
                         UN PROJET ?
                     </p>
 
+
                     <h2>
                         Construisons quelque chose d'intéressant.
                     </h2>
+
 
                     <p>
                         Vous avez une idée, un projet ou une opportunité
@@ -512,18 +620,23 @@
 
                 </div>
 
+
+                <!-- BOUTON CONTACT -->
+
                 <a
-                    href="pages/contact.html"
+                    href="./pages/contact.html"
                     class="btn btn-primary"
                 >
                     Prendre contact →
                 </a>
+
 
             </div>
 
         </section>
 
     </main>
+
 
 
     <!-- =====================================================
@@ -534,16 +647,19 @@
 
         <div class="container footer-content">
 
-            <!-- Identité -->
+
+            <!-- IDENTITÉ -->
+
             <div>
 
                 <a
-                    href="index.html"
+                    href="./index.html"
                     class="logo"
                     aria-label="Retour à l'accueil"
                 >
                     <span>J</span>S
                 </a>
+
 
                 <p>
                     Portfolio professionnel de Jérémie Santiago.
@@ -551,21 +667,26 @@
 
             </div>
 
-            <!-- Copyright -->
+
+            <!-- COPYRIGHT -->
+
             <p>
                 © 2026 Jérémie Santiago — Tous droits réservés.
             </p>
+
 
         </div>
 
     </footer>
 
 
+
     <!-- =====================================================
          JAVASCRIPT
     ====================================================== -->
 
-    <script src="js/script.js"></script>
+    <script src="./js/script.js"></script>
 
 </body>
+
 </html>
