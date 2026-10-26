@@ -1,4 +1,18 @@
+
+/* ==================================================
+   RESPONSIVE.CSS
+   Portfolio de Jérémie Santiago
+   Style : Tech Premium — Bleu nuit et bleu électrique
+================================================== */
+
+
+/* ==================================================
+   TABLETTES ET PETITS ORDINATEURS
+================================================== */
+
 @media (max-width: 950px) {
+
+    /* Navigation mobile */
 
     .nav-links {
         display: none;
@@ -8,8 +22,11 @@
         right: 0;
         padding: 25px;
         flex-direction: column;
-        background: #08111f;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        gap: 20px;
+        background: #071a2e;
+        border-bottom: 1px solid rgba(56, 189, 248, 0.2);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+        z-index: 1000;
     }
 
     .nav-links.show {
@@ -24,84 +41,65 @@
         display: none;
     }
 
+    /* Présentation principale */
+
     .hero-content {
         grid-template-columns: 1fr;
-        gap: 55px;
-        padding: 70px 0;
+        gap: 45px;
+        padding: 65px 0;
     }
+
+    /* Cartes et projets */
 
     .cards-grid,
     .project-grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
+
+    /* Appel à l'action */
 
     .cta-box {
         flex-direction: column;
         align-items: flex-start;
+        gap: 25px;
     }
 }
 
 
-@media (max-width: 650px) {
+/* ==================================================
+   TABLETTES
+================================================== */
 
-    .section {
-        padding: 75px 0;
-    }
-
-    .hero h1 {
-        letter-spacing: -2px;
-    }
-
-    .hero h2 {
-        font-size: 19px;
-    }
-
-    .hero-description {
-        font-size: 15px;
-    }
-
-    .cards-grid,
-    .project-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .section-heading-row {
-        align-items: flex-start;
-        flex-direction: column;
-    }
-
-    .profile-card {
-        padding: 35px 20px;
-    }
-
-    .cta-box {
-        padding: 35px 25px;
-    }
-
-    .cta-box h2 {
-        font-size: 29px;
-    }
-
-    .footer-content {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-}
 @media (max-width: 850px) {
+
+    /* Sections À propos et Contact */
 
     .about-grid,
     .contact-grid {
         grid-template-columns: 1fr;
+        gap: 35px;
     }
 
-    .skills-grid {
-        grid-template-columns: 1fr;
+    .contact-form-wrapper {
+        width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
     }
+
+    /* Compétences */
+
+    .skills-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    /* Titres */
 
     .about-text h2,
     .contact-info h2 {
         font-size: 32px;
     }
+
+    /* Projets */
 
     .project-large {
         padding: 28px;
@@ -110,10 +108,94 @@
     .project-large-number {
         font-size: 55px;
     }
+
+    /* Formulaire Google */
+
+    .google-form-container {
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .google-form-container iframe {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: 2000px;
+        border: 0;
+    }
 }
 
 
-@media (max-width: 600px) {
+/* ==================================================
+   TÉLÉPHONES
+================================================== */
+
+@media (max-width: 650px) {
+
+    /* Sections */
+
+    .section {
+        padding: 65px 0;
+    }
+
+    /* Titres de la page d'accueil */
+
+    .hero h1 {
+        letter-spacing: -1.5px;
+        overflow-wrap: anywhere;
+    }
+
+    .hero h2 {
+        font-size: 19px;
+    }
+
+    .hero-description {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+    /* Grilles */
+
+    .cards-grid,
+    .project-grid,
+    .skills-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    /* En-têtes de section */
+
+    .section-heading-row {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    /* Carte de profil */
+
+    .profile-card {
+        padding: 30px 20px;
+    }
+
+    /* Appel à l'action */
+
+    .cta-box {
+        padding: 30px 22px;
+    }
+
+    .cta-box h2 {
+        font-size: 27px;
+    }
+
+    /* Pied de page */
+
+    .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    /* Pages internes */
 
     .inner-hero {
         padding-top: 85px;
@@ -121,11 +203,14 @@
     }
 
     .inner-hero h1 {
-        letter-spacing: -1.5px;
+        letter-spacing: -1px;
+        overflow-wrap: anywhere;
     }
 
+    /* Frise chronologique */
+
     .timeline-item {
-        grid-template-columns: 38px 1fr;
+        grid-template-columns: 38px minmax(0, 1fr);
         gap: 15px;
     }
 
@@ -140,50 +225,16 @@
 
     .timeline-content {
         padding: 22px;
+        min-width: 0;
     }
 
-    .contact-form-wrapper {
-        padding: 22px;
-    }
+    /* Projets détaillés */
 
     .project-large-content h2 {
         font-size: 24px;
     }
-}
 
-/* ==================================================
-   FORMULAIRE GOOGLE RESPONSIVE
-================================================== */
-
-/* Tablettes et écrans intermédiaires */
-@media (max-width: 850px) {
-
-    .contact-grid {
-        grid-template-columns: 1fr;
-        gap: 35px;
-    }
-
-    .contact-form-wrapper {
-        width: 100%;
-        min-width: 0;
-    }
-
-    .google-form-container {
-        width: 100%;
-        max-width: 100%;
-        overflow: hidden;
-    }
-
-    .google-form-container iframe {
-        display: block;
-        width: 100%;
-        height: 2000px;
-        border: 0;
-    }
-}
-
-/* Téléphones */
-@media (max-width: 600px) {
+    /* Contact */
 
     .contact-form-wrapper {
         padding: 16px;
@@ -193,14 +244,32 @@
         font-size: 25px;
     }
 
+    /* Formulaire Google */
+
     .google-form-container iframe {
         width: 100%;
         height: 2200px;
     }
 }
 
-/* Très petits téléphones */
+
+/* ==================================================
+   TRÈS PETITS TÉLÉPHONES
+================================================== */
+
 @media (max-width: 380px) {
+
+    .section {
+        padding: 50px 0;
+    }
+
+    .profile-card {
+        padding: 25px 15px;
+    }
+
+    .cta-box {
+        padding: 25px 18px;
+    }
 
     .contact-form-wrapper {
         padding: 12px;
@@ -208,5 +277,19 @@
 
     .google-form-container iframe {
         height: 2300px;
+    }
+
+    .timeline-item {
+        grid-template-columns: 32px minmax(0, 1fr);
+        gap: 12px;
+    }
+
+    .timeline-marker {
+        width: 32px;
+        height: 32px;
+    }
+
+    .timeline::before {
+        left: 15px;
     }
 }
