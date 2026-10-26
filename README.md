@@ -45,7 +45,7 @@ Ce dépôt contient le code source de mon portfolio professionnel.
 
 ## Auteur
 
-Jérémie Santiago
+Jérémie ONDZIE MOUABA 
 
 GitHub :
 https://github.com/jeremiesantiagoondzie-web
